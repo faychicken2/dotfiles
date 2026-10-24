@@ -1,0 +1,20 @@
+# Copy this file to ~/.gitconfig, then replace the placeholders.
+# This template is safe to commit. Do not put passwords, tokens, or work-only
+# repository settings in the shared dotfiles repository.
+
+[user]
+    name = YOUR NAME
+    email = YOUR EMAIL
+
+[core]
+    editor = nvim
+
+# Uncomment and customize settings that you want to share across machines.
+# [init]
+#     defaultBranch = main
+# [pull]
+#     rebase = false
+# [push]
+#     autoSetupRemote = true
+
+# Keep signing keys, credential helpers, and work-specific settings local.

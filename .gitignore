@@ -1,0 +1,13 @@
+# Raw machine snapshots may contain credentials or internal information.
+/backups/
+/local/*
+!/local/README.md
+*.swp
+*.swo
+*~
+
+# Private Git configuration copies must never be committed.
+/.gitconfig
+/rc/.gitconfig
+/local/.gitconfig
+*.gitconfig.local

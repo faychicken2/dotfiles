@@ -1,0 +1,49 @@
+# Shared i3 starter configuration.
+# Keep machine-specific commands in ~/.config/i3/config.local when needed.
+
+set $mod Mod4
+set $term i3-sensible-terminal
+set $menu dmenu_run
+
+font pango:monospace 10
+floating_modifier $mod
+
+# Launch and close applications.
+bindsym $mod+Return exec --no-startup-id $term
+bindsym $mod+d exec --no-startup-id $menu
+bindsym $mod+Shift+q kill
+
+# Move focus with Vim-like keys.
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# Move windows with Shift plus the same keys.
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+# Workspaces.
+bindsym $mod+1 workspace number 1
+bindsym $mod+2 workspace number 2
+bindsym $mod+3 workspace number 3
+bindsym $mod+4 workspace number 4
+bindsym $mod+5 workspace number 5
+
+# Split direction and layout.
+bindsym $mod+v split v
+bindsym $mod+b split h
+bindsym $mod+f fullscreen toggle
+
+# Reload or restart i3 after changing this file.
+bindsym $mod+Shift+r reload
+bindsym $mod+Shift+c restart
+
+bar {
+    status_command i3status
+}
+
+# Optional private machine settings can be added later in a separate file.
+# Keep work-specific commands out of this shared configuration for now.

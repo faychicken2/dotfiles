@@ -1,0 +1,1 @@
+-- Fugitive works through commands such as :Git and needs no setup here.
